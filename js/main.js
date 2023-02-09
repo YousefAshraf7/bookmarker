@@ -21,6 +21,7 @@ function nameValid(){
             return true;
         }else if(regexName.test(siteNameEle.value) == false){
             nameAlertEle.classList.replace("d-none" , "d-block");
+            nameAlertEle.innerHTML= "This feild cant be empty"
         }
 }
 function urlValid(){
@@ -34,7 +35,10 @@ function urlValid(){
         }
    
 }
-siteNameEle.addEventListener("blur", nameValid);
+siteNameEle.addEventListener("input", function(){
+    nameValid()
+    sameName()
+});
 siteUrlEle.addEventListener("input", urlValid);
 submitEle.addEventListener("click",addSite);
 
@@ -44,7 +48,7 @@ submitEle.addEventListener("click",addSite);
 
 function addSite(){
 
-    if(urlValid() == true && nameValid()== true){
+    if(urlValid() == true && nameValid()== true && sameName()== true) {
         var site={
             siteName:siteNameEle.value ,
             siteUrl :siteUrlEle.value
@@ -89,5 +93,15 @@ function deleteSite(currentIndex){
     }
 
 
-
-
+// Validating The Same Name
+function sameName(){
+    for (var i = 0; i < sites.length; i++){
+        if (siteNameEle.value == sites[i].siteName){
+            // alert('Name already exists')
+            nameAlertEle.classList.replace("d-none" , "d-block");
+            nameAlertEle.innerHTML= "this name is already used"
+            return false;
+        }
+    }
+    return true;
+}
