@@ -1,0 +1,39 @@
+h1{
+    color: rgb(170, 170, 170);
+    border-bottom: 1px solid rgb(153, 153, 153);
+}
+ .form-control:focus {
+ box-shadow: none!important;
+ border: 2px solid black!important    ;
+}
+.form{
+    background-color: rgb(238, 238, 238);
+}
+
+.btn:hover {
+    box-shadow: rgb(136, 136, 136) 2px 5px 5px 0px;
+}
+.alert{
+    border-width: 2px;
+    font-weight: 500;
+    color: rgb(109, 0, 0);
+    background-color: rgb(255, 178, 178);
+    border-color: rgb(109, 0, 0);
+}
+.box{
+    background-image: linear-gradient(#EEE,#FFF);
+}
+
+/* .btn-danger {
+    background-color: #910004;
+    color: white;
+    border: 1px solid #910004;
+} */
+/* .btn-danger:hover {
+    background-color: #510d0e;
+    border: 1px solid #510d0e;
+} */
+/* .btn-danger{
+
+    box-shadow: rgba(136, 136, 136, 0.178) 2px 5px 5px 0px;
+} */

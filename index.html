@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>DashBoard</title>
+</head>
+<body>
+    <div class="container py-2">
+        <h1 class="py-5 px-4 fs-2 fw-bold ">Bookmarker</h1>
+    </div>
+    <div class="container px-5 mb-4">
+        <div class=" form p-5 text-center ">
+            <h2 class="fs-3 text-center">Bookmark your favorite sites</h2>
+            <div class="site-name px-5 py-2  d-flex flex-column align-content-center justify-content-center">
+                <label for="siteName" class="fs-5 mb-2 fw-bold ">Site Name</label>
+                <input class="form-control py-1" type="text" id="siteName" placeholder="Bookmark Name"  aria-label="default input example">
+            </div>
+            <div class="name-alert alert alert-danger mx-5 py-1 d-none" id="name-alert" role="alert">
+              This feild cant be empty
+              </div>
+            <div class="site-url px-5 py-2  d-flex flex-column align-content-center justify-content-center">
+                <label for="siteUrl" class="fs-5 mb-2 fw-bold">Site URL</label>
+                <input class="form-control py-1" type="text" id="siteUrl" placeholder="Website URL"  aria-label="default input example">
+            </div>
+            <div class="url-alert alert alert-danger mx-5 py-1 d-none" role="alert" id="url-alert">
+                Not Valid URL
+                </div>
+            <button class="btn btn-primary">Submit</button>
+
+            
+        </div>
+    </div>
+    
+    <div class="boxes">
+        <div class="container px-5">
+            
+            
+
+
+            
+
+
+
+
+
+
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
